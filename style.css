@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #1C0113;
     font-family: "Poppins", sans-serif;
@@ -16,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 90px;
+    gap: 70px;
     color: #FFFFFF;
     padding: 0 20px;
 }
@@ -165,15 +170,13 @@ body {
 .languages {
     display: flex;
     flex-direction: column;
-    border-top: 3px solid #a30006;
-    border-bottom: 3px solid #a30006;
     width: 85%;
-    padding-bottom: 120px;
+    padding-bottom: 80px
 }
 
 .subtitle-language {
     font-size: 3.5rem;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-left: -40px;
     text-decoration: underline #c21a01 5px;
 }
@@ -197,6 +200,11 @@ body {
     width: 100%;
     padding: 40px 6px 10px;
     flex-wrap: wrap;
+    margin-top: -30px;
+}
+
+.subtitle-projects{
+  font-size: 2.3rem;
 }
 
 .card-project {
@@ -465,16 +473,89 @@ body {
     font-size: 3rem;
 }
 
+/*Curso Técnico*/
+
+.formation{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.subtitle-formation {
+    font-size: 2.8rem;
+    text-align: initial;
+    margin-left: -50px;
+}
+
+.senac{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.img-senac{
+    width: 480px;
+    border-radius: 12px;
+    border: #0b0205 2px solid;
+}
+
+.senac-info h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.trainewia{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.img-trainewia{
+    width: 480px;
+    border-radius: 12px;
+    border: #e6e6e6 2px solid;
+}
+
+.trainewia-info{
+    width: 700px;
+}
+
+.trainewia-info h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.btn-visit-trainew{
+    background: linear-gradient(90deg, #c21a01, #6b0103);
+    box-shadow: 0 6px 20px rgba(163, 0, 6, 0.18);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.trainewia-info a{
+    text-decoration: none;
+    color: white;
+}
+
+
 /* Footer */
 .site-footer {
     width: 100%;
-    background: rgba(12, 4, 8, 0.7);
-    border-top: 1px solid rgba(163, 0, 6, 0.7);
+    background: rgba(10, 3, 7, 0.7);
+    border-top: #0b0205 3px solid;
     padding: 28px 20px;
     display: flex;
     justify-content: initial;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 7%;
 }
 
 .footer-inner {
@@ -685,5 +766,21 @@ body {
     html,
     body {
         overflow-x: hidden
+    }
+}
+
+/* Separador entre a região de projetos e a próxima seção */
+.projects-separator {
+    width: 90%;
+    height: 3px;
+    margin: 1.5rem auto;
+    border: none;
+    background: linear-gradient(90deg, transparent, rgba(240, 0, 0, 0.623), transparent);
+}
+
+@media (max-width: 480px) {
+    .projects-separator {
+        width: 100%;
+        margin: 2rem 0;
     }
 }
